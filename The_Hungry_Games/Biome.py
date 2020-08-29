@@ -14,5 +14,4 @@ class Biome:
 forest = Biome("Forest", loot_pool=[Weapon.fat_pistol])
 desert = Biome("Desert")
 urban = Biome("Urban")
-beach = Biome("Beach")
 tundra = Biome("Tundra")
