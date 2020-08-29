@@ -16,7 +16,7 @@ class Weapon_Type(enum.Enum):
     SPECIAL_WEAPON="special_weapon"
     
 weapon_type_value_dict = {"bow": (70, 50, 30, 70), "lmg": (50, 30, 15, 80), "assault_rifle": (35, 20, 10, 85), "smg": (25, 15, 5, 90),
-                          "pistol": (20, 10, 5, 95), "sniper_rifle": (90, 65, 40, 90), "semiauto_rifle": (40, 25, 15, 80), "special_weapon": (80, 80, 80, 70)}
+                          "pistol": (20, 10, 5, 95), "sniper_rifle": (90, 65, 40, 90), "semiauto_rifle": (40, 25, 15, 80), "special_weapon": (80, 80, 80, 100)}
 
 class Weapon:
     def __init__(self, name='', damage_type=Damage_Type.FAT, weapon_type=None):
@@ -34,27 +34,28 @@ fat_submachine_gun = Weapon("Fat Submachine Gun", Damage_Type.FAT, Weapon_Type.S
 fat_pistol = Weapon("Fat Pistol", Damage_Type.FAT, Weapon_Type.PISTOL)
 fat_sniper_rifle = Weapon("Fat Sniper Rifle", Damage_Type.FAT, Weapon_Type.SNIPER_RIFLE)
 fat_semiauto_rifle = Weapon("Fat Semi-Auto Rifle", Damage_Type.FAT, Weapon_Type.SEMIAUTO_RIFLE)
-gatling_cake_gun = Weapon("Gatling Cake Gun", Damage_Type.FAT, Weapon_Type.SPECIAL_WEAPON
+cake_gatling_gun = Weapon("Cake Gatling Gun", Damage_Type.FAT, Weapon_Type.SPECIAL_WEAPON)
+
 """
 Unused for now \/
 
-inflation_bow = Weapon("Inflation Bow", Damage_Type.INFLATION, 50, Weapon_Type.BOW)
-inflation_lmg = Weapon("Inflation LMG", Damage_Type.INFLATION, 30, Weapon_Type.LMG)
-inflation_assault_rifle = Weapon("Inflation Assault Rifle", Damage_Type.INFLATION, 20, Weapon_Type.ASSAULT_RIFLE)
-inflation_submachine_gun = Weapon("Inflation Submachine Gun", Damage_Type.INFLATION, 15, Weapon_Type.SMG)
-inflation_pistol = Weapon("Inflation Pistol", Damage_Type.INFLATION, 10, Weapon_Type.PISTOL)
-inflation_sniper_rifle = Weapon("Inflation Sniper Rifle", Damage_Type.INFLATION, 65, Weapon_Type.SNIPER_RIFLE)
-inflation_semiauto_rifle = Weapon("Inflation Semi-Auto Rifle", Damage_Type.INFLATION, 25, Weapon_Type.SEMIAUTO_RIFLE)
-air_cannon = Weapon("Air Cannon", Damage_Type.INFLATION, 80, Weapon_Type.SPECIAL_WEAPON)
+inflation_bow = Weapon("Inflation Bow", Damage_Type.INFLATION, Weapon_Type.BOW)
+inflation_lmg = Weapon("Inflation LMG", Damage_Type.INFLATION, Weapon_Type.LMG)
+inflation_assault_rifle = Weapon("Inflation Assault Rifle", Damage_Type.INFLATION, Weapon_Type.ASSAULT_RIFLE)
+inflation_submachine_gun = Weapon("Inflation Submachine Gun", Damage_Type.INFLATION, Weapon_Type.SMG)
+inflation_pistol = Weapon("Inflation Pistol", Damage_Type.INFLATION, Weapon_Type.PISTOL)
+inflation_sniper_rifle = Weapon("Inflation Sniper Rifle", Damage_Type.INFLATION, Weapon_Type.SNIPER_RIFLE)
+inflation_semiauto_rifle = Weapon("Inflation Semi-Auto Rifle", Damage_Type.INFLATION, Weapon_Type.SEMIAUTO_RIFLE)
+air_cannon = Weapon("Air Cannon", Damage_Type.INFLATION, Weapon_Type.SPECIAL_WEAPON)
 
 #Need to add berry effect
 
-berry_bow = Weapon("Berry Bow", Damage_Type.BERRY, 50, Weapon_Type.BOW)
-berry_lmg = Weapon("Berry LMG", Damage_Type.BERRY, 30, Weapon_Type.LMG)
-berry_assault_rifle = Weapon("Berry Assault Rifle", Damage_Type.BERRY, 20, Weapon_Type.ASSAULT_RIFLE)
-berry_submachine_gun = Weapon("Berry Submachine Gun", Damage_Type.BERRY, 15, Weapon_Type.SMG)
-berry_pistol = Weapon("Berry Pistol", Damage_Type.BERRY, 10, Weapon_Type.PISTOL)
-berry_sniper_rifle = Weapon("Berry Sniper Rifle", Damage_Type.BERRY, 65, Weapon_Type.SNIPER_RIFLE)
-berry_semiauto_rifle = Weapon("Berry Semi-Auto Rifle", Damage_Type.BERRY, 25, Weapon_Type.SEMIAUTO_RIFLE)
-berry_beam = Weapon("Berry Beam", Damage_Type.BERRY, 80, Weapon_Type.SPECIAL_WEAPON)
+berry_bow = Weapon("Berry Bow", Damage_Type.BERRY, Weapon_Type.BOW)
+berry_lmg = Weapon("Berry LMG", Damage_Type.BERRY, Weapon_Type.LMG)
+berry_assault_rifle = Weapon("Berry Assault Rifle", Damage_Type.BERRY, Weapon_Type.ASSAULT_RIFLE)
+berry_submachine_gun = Weapon("Berry Submachine Gun", Damage_Type.BERRY, Weapon_Type.SMG)
+berry_pistol = Weapon("Berry Pistol", Damage_Type.BERRY, Weapon_Type.PISTOL)
+berry_sniper_rifle = Weapon("Berry Sniper Rifle", Damage_Type.BERRY, Weapon_Type.SNIPER_RIFLE)
+berry_semiauto_rifle = Weapon("Berry Semi-Auto Rifle", Damage_Type.BERRY,, Weapon_Type.SEMIAUTO_RIFLE)
+berry_beam = Weapon("Berry Beam", Damage_Type.BERRY, Weapon_Type.SPECIAL_WEAPON)
 """
