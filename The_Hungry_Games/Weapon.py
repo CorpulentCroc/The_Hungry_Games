@@ -13,10 +13,10 @@ class Weapon_Type(enum.Enum):
     PISTOL="pistol"
     SNIPER_RIFLE="sniper_rifle"
     SEMIAUTO_RIFLE="semiauto_rifle"
-    BEAM="beam"
+    SPECIAL_WEAPON="special_weapon"
     
 weapon_type_value_dict = {"bow": (70, 50, 30, 70), "lmg": (50, 30, 15, 80), "assault_rifle": (35, 20, 10, 85), "smg": (25, 15, 5, 90),
-                          "pistol": (20, 10, 5, 95), "sniper_rifle": (90, 65, 40, 90), "semiauto_rifle": (40, 25, 15, 80)}
+                          "pistol": (20, 10, 5, 95), "sniper_rifle": (90, 65, 40, 90), "semiauto_rifle": (40, 25, 15, 80), "special_weapon": (80, 80, 80, 70)}
 
 class Weapon:
     def __init__(self, name='', damage_type=Damage_Type.FAT, weapon_type=None):
@@ -34,7 +34,7 @@ fat_submachine_gun = Weapon("Fat Submachine Gun", Damage_Type.FAT, Weapon_Type.S
 fat_pistol = Weapon("Fat Pistol", Damage_Type.FAT, Weapon_Type.PISTOL)
 fat_sniper_rifle = Weapon("Fat Sniper Rifle", Damage_Type.FAT, Weapon_Type.SNIPER_RIFLE)
 fat_semiauto_rifle = Weapon("Fat Semi-Auto Rifle", Damage_Type.FAT, Weapon_Type.SEMIAUTO_RIFLE)
-
+gatling_cake_gun = Weapon("Gatling Cake Gun", Damage_Type.FAT, Weapon_Type.SPECIAL_WEAPON
 """
 Unused for now \/
 
