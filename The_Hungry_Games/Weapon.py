@@ -45,6 +45,7 @@ inflation_submachine_gun = Weapon("Inflation Submachine Gun", Damage_Type.INFLAT
 inflation_pistol = Weapon("Inflation Pistol", Damage_Type.INFLATION, 10, Weapon_Type.PISTOL)
 inflation_sniper_rifle = Weapon("Inflation Sniper Rifle", Damage_Type.INFLATION, 65, Weapon_Type.SNIPER_RIFLE)
 inflation_semiauto_rifle = Weapon("Inflation Semi-Auto Rifle", Damage_Type.INFLATION, 25, Weapon_Type.SEMIAUTO_RIFLE)
+air_cannon = Weapon("Air Cannon", Damage_Type.INFLATION, 80, Weapon_Type.SPECIAL_WEAPON)
 
 #Need to add berry effect
 
@@ -55,5 +56,5 @@ berry_submachine_gun = Weapon("Berry Submachine Gun", Damage_Type.BERRY, 15, Wea
 berry_pistol = Weapon("Berry Pistol", Damage_Type.BERRY, 10, Weapon_Type.PISTOL)
 berry_sniper_rifle = Weapon("Berry Sniper Rifle", Damage_Type.BERRY, 65, Weapon_Type.SNIPER_RIFLE)
 berry_semiauto_rifle = Weapon("Berry Semi-Auto Rifle", Damage_Type.BERRY, 25, Weapon_Type.SEMIAUTO_RIFLE)
-berry_beam = Weapon("Berry Beam", Damage_Type.BERRY, 80, Weapon_Type.BEAM)
+berry_beam = Weapon("Berry Beam", Damage_Type.BERRY, 80, Weapon_Type.SPECIAL_WEAPON)
 """
