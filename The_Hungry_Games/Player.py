@@ -77,4 +77,5 @@ midnight = Player('Midnight', 'Cabbit', 'Male')
 ray = Player('Ray', 'Fennec Fox', 'Female')
 ranz = Player('Ranz', 'Lucario', 'Male')
 temp = Player("Temp", "Bubble Dragon", 'Male')
-chilly = Player('Chilly', 'Fatass shrew snack', 'Male')
+chilly = Player('Chilly', 'Alolan Sandshrew', 'Male')
+npc_players = [crominulus, vyacheslav, tricia, koko, liz, brush, midnight, ray, temp, chilly]
