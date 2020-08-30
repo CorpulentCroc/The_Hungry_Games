@@ -14,6 +14,7 @@ class Armor:
     def __init__(self, name='', armor_tier=Armor_Tiers.TIER_1):
         self.name = name
         self.armor_tier = armor_tier
+        self._type = 'Armor'
         
 t1 = Armor("Tier 1 Armor")
 t2 = Armor("Tier 2 Armor", Armor_Tiers.TIER_2)
