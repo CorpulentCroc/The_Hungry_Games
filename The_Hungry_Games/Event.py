@@ -35,6 +35,7 @@ def battle_helper(p, rng_func, l):
         
 battle = Event('Battle', 'universal', 'You are confronted by a player a battle ensues')
 back_turned = Event('Coming across a player whose back is turned', 'universal', 'You come across a player unaware of your presence, and can either sneak attack them or leave')
+final_battle = Event('You and only one other player remain', 'universal', 'You are forced to the middle, you spot the other player, this is the battle for victory!)
 def find_random_item_helper(player, map_biome):
     item_found = map_biome.get_loot()
     while True:
