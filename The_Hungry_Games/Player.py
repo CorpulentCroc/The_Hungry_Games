@@ -16,14 +16,13 @@ class Player:
                 print(f'{i+1}: {self.inventory[i].name}')
                 
     def print_weapons(self):
-        count = 1
         for i in range(len(self.inventory)):
-            if type(self.inventory[i]) == 'Weapon':
-                print(f'{count}: {self.inventory[i].name}')
+            if self.inventory[i]._type == 'Weapon':
+                print(f'{i+1}: {self.inventory[i].name}')
     
     def has_weapon(self):
         for i in self.inventory:
-            if type(i) == 'Weapon':
+            if i._type == 'Weapon':
                 return True
         return False
                 
@@ -39,7 +38,7 @@ class Player:
                 print("Choose a valid item number or -1")
             break
         item = self.inventory[index]
-        type_of = type(item)
+        type_of = item._type
         if type_of == "Armor":
             self.use_armor(item)
         elif type_of == "Health_Item":
@@ -90,4 +89,5 @@ ray = Player('Ray', 'Fennec Fox', 'Female')
 ranz = Player('Ranz', 'Lucario', 'Male')
 temp = Player("Temp", "Bubble Dragon", 'Male')
 chilly = Player('Chilly', 'Alolan Sandshrew', 'Male')
+main_player = Player()
 npc_players = [crominulus, vyacheslav, tricia, koko, liz, brush, midnight, ray, temp, chilly]
