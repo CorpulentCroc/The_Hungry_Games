@@ -24,6 +24,7 @@ class Weapon:
         self.damage_type = damage_type
         self.weapon_type = weapon_type
         self.h_dmg, self.b_dmg, self.l_dmg, self.accuracy = weapon_type_value_dict[self.weapon_type.value]
+        self._type = 'Weapon'
     def __str__(self):
         return self.name
         
