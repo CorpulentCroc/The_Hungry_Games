@@ -15,6 +15,18 @@ class Player:
         for i in range(len(self.inventory)):
                 print(f'{i+1}: {self.inventory[i].name}')
                 
+    def print_weapons(self):
+        count = 1
+        for i in range(len(self.inventory)):
+            if type(self.inventory[i]) == 'Weapon':
+                print(f'{count}: {self.inventory[i].name}')
+    
+    def has_weapon(self):
+        for i in self.inventory:
+            if type(i) == 'Weapon':
+                return True
+        return False
+                
     def use(self):
         self.print_inventory()
         while True:
